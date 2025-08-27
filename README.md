@@ -13,6 +13,9 @@ Los datos utilizados incluyen: ID, Raza, Sexo y Peso del animal.
 
 Process finished with exit code 0
 
+<img width="910" height="278" alt="image" src="https://github.com/user-attachments/assets/20df8d69-3ad6-43ed-bb85-9cb88c27735a" />
+
+
 
 
 

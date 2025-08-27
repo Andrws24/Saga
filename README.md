@@ -1,5 +1,5 @@
 REPORTE DE PRUEBAS UNITARIAS - PROYECTO "SAGA"
-Estudiante: Andres Arcila - Cristian Casiani
+Estudiante: Andres Arcila - Cristian Valdez
 Módulo probado: Gestión de Inventario de Ganado
 Clase probada: InventarioGanadoService
 

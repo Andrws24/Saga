@@ -1,3 +1,11 @@
+INTEGRANTES
+
+CRISTIAN VALDES CASSIANI
+ANDRES ARCILA LEAL
+
+
+
+
 REPORTE DE PRUEBAS UNITARIAS - PROYECTO "SAGA"
 Estudiante: Andres Arcila - Cristian Valdez
 Módulo probado: Gestión de Inventario de Ganado

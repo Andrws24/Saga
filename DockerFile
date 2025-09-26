@@ -1,0 +1,26 @@
+# Imagen base con Java 11
+FROM openjdk:11-jre-slim
+
+# Información del proyecto
+LABEL maintainer="Andrws24"
+LABEL description="Saga - Sistema de Inventario de Ganado"
+
+# Directorio de trabajo
+WORKDIR /app
+
+# Copiar JAR construido
+COPY target/*.jar saga-ganado.jar
+
+# Crear usuario no-root para seguridad
+RUN addgroup --system saga && adduser --system --group saga
+RUN chown -R saga:saga /app
+USER saga
+
+# Puerto (ajustar según tu aplicación)
+EXPOSE 8080
+
+# Variables de entorno
+ENV JAVA_OPTS="-Xmx512m -Xms256m"
+
+# Comando de inicio
+CMD ["sh", "-c", "java $JAVA_OPTS -jar saga-ganado.jar"]

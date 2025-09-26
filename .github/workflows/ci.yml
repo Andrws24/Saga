@@ -28,13 +28,8 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       
-      - name: Run tests with coverage
-        run: mvn clean test jacoco:report
-      
-      - name: Check coverage threshold
-        run: |
-          # Verificar que el coverage sea mayor al 80%
-          mvn jacoco:check -Djacoco.haltOnFailure=true
+      - name: Run tests and verify coverage
+        run: mvn clean verify
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
